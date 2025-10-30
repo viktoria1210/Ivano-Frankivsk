@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Галерея – Івано-Франківськ</title>
+  <link rel="stylesheet" href="../style.css">
+  <script defer src="../script.js"></script>
+</head>
+<body>
+
+  <!-- Навігація -->
+  <nav class="navbar">
+    <div class="logo">Івано-Франківськ</div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Головна</a></li>
+      <li><a href="about.html">Про місто</a></li>
+      <li><a href="tourism.html">Туризм</a></li>
+      <li><a href="culture.html">Культура</a></li>
+      <li><a href="gallery.html" class="active">Галерея</a></li>
+      <li><a href="contact.html">Контакти</a></li>
+    </ul>
+    <div class="menu-toggle">&#9776;</div>
+  </nav>
+
+  <!-- Хедер -->
+  <header class="hero-section" style="height: 50vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+              url('https://upload.wikimedia.org/wikipedia/commons/8/86/Ivano-Frankivsk_Stometrivka.jpg') center/cover;">
+    <div class="hero-content">
+      <h1>Галерея</h1>
+      <p>Красоти міста крізь об’єктив 📸</p>
+    </div>
+  </header>
+
+  <!-- Галерея фото -->
+  <section class="fade-in">
+    <h2>Міські краєвиди</h2>
+    <div class="gallery-grid">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/02/Ivano-Frankivsk_Panorama.jpg" alt="Панорама міста">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/d/da/Stometrivka_Ivano-Frankivsk.jpg" alt="Стометрівка">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/25/Shevchenko_Park_Ivano-Frankivsk.jpg" alt="Парк Шевченка">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/f/f1/Ivano-Frankivsk_Drama_Theater.jpg" alt="Драмтеатр">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/35/Ivano-Frankivsk_Cathedral.jpg" alt="Катедра">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Flag_of_Ivano-Frankivsk.png" alt="Прапор міста">
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer>
+    <p>© 2025 Івано-Франківськ | Галерея</p>
+  </footer>
+
+  <style>
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem 5%;
+    }
+
+    .gallery-grid img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+  </style>
+
+</body>
+</html>
