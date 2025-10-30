@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Культура – Івано-Франківськ</title>
+  <link rel="stylesheet" href="../style.css">
+  <script defer src="../script.js"></script>
+</head>
+<body>
+
+  <!-- Навігація -->
+  <nav class="navbar">
+    <div class="logo">Івано-Франківськ</div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Головна</a></li>
+      <li><a href="about.html">Про місто</a></li>
+      <li><a href="tourism.html">Туризм</a></li>
+      <li><a href="culture.html" class="active">Культура</a></li>
+      <li><a href="gallery.html">Галерея</a></li>
+      <li><a href="contact.html">Контакти</a></li>
+    </ul>
+    <div class="menu-toggle">&#9776;</div>
+  </nav>
+
+  <!-- Хедер -->
+  <header class="hero-section" style="height: 60vh; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+              url('https://upload.wikimedia.org/wikipedia/commons/f/f1/Ivano-Frankivsk_Drama_Theater.jpg') center/cover;">
+    <div class="hero-content">
+      <h1>Культура міста</h1>
+      <p>Театри, музеї, фестивалі — душа Івано-Франківська</p>
+    </div>
+  </header>
+
+  <!-- Театри -->
+  <section class="fade-in">
+    <h2>Театральне життя</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://versii.if.ua/wp-content/uploads/2024/06/04238ed6685d6885a34b6bd293f11ebc-1000x664.jpg" alt="Драмтеатр">
+        <h3>Івано-Франківський драмтеатр</h3>
+        <p>Один із найвідоміших театрів України, що поєднує класику та сучасну драму.</p>
+      </div>
+      <div class="card">
+        <img src="https://ifteatr.org.ua/wp-content/uploads/2024/09/main-teater.jpg" alt="Театр ляльок">
+        <h3>Театр ляльок</h3>
+        <p>Дитячий театр, який дивує казковими постановками та живою музикою.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Музеї -->
+  <section class="fade-in" style="background:#f9f9f9;">
+    <h2>Музеї Івано-Франківська</h2>
+    <ul class="list">
+      <li><strong>Краєзнавчий музей</strong> — розповідає про історію, природу й мистецтво Прикарпаття.</li>
+      <li><strong>Музей мистецтв Прикарпаття</strong> — колекції ікон, картин, скульптур від XV до XX століть.</li>
+      <li><strong>Музей визвольної боротьби</strong> — присвячений історії УПА та боротьбі за незалежність.</li>
+    </ul>
+  </section>
+
+  <!-- Фестивалі -->
+  <section class="fade-in">
+    <h2>Міські фестивалі</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://karpaty.love/uploads/posts/2021-09/1632316420_podii-v-ivano-frankivsku.jpg" alt="Фестиваль">
+        <h3>Porto Franko</h3>
+        <p>Міжнародний фестиваль мистецтв, що поєднує театр, музику, кіно та перформанс.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Галерея -->
+  <section class="fade-in" style="background:#fafafa;">
+    <h2>Митці міста</h2>
+    <p>Івано-Франківськ — місто художників, поетів і музикантів. Тут народились і творили Василь Стефаник, Ольга Кобилянська, Іван Франко.</p>
+    <div class="gallery-grid">
+      <img src="https://static.ukrinform.com/photos/2021_05/thumb_files/630_360_1620938408-475.jpg" alt="Василь Стефаник">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Olha-kobylyanska.jpg" alt="Ольга Кобилянська">
+      <img src="https://znattya.com.ua/wp-content/uploads/2024/02/ivan-franko.jpg" alt="Іван Франко">
+    </div>
+  </section>
+
+  <!-- Футер -->
+  <footer>
+    <p>© 2025 Івано-Франківськ | Культура</p>
+  </footer>
+
+  <style>
+    .list {
+      width: 80%;
+      margin: 0 auto;
+      padding: 1rem;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      padding: 1rem 2rem;
+    }
+    .gallery-grid img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.3s;
+    }
+
+    .gallery-grid img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+
+</body>
+</html>
